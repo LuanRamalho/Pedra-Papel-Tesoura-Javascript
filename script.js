@@ -1,26 +1,26 @@
 let [computer_score,user_score]=[0,0];
 let result_ref = document.getElementById("result");
 let choices_object = {
-    'rock' : {
-        'rock' : 'draw',
-        'scissor' : 'win',
-        'paper' : 'lose'
+    'pedra' : {
+        'pedra' : 'draw',
+        'tesoura' : 'win',
+        'papel' : 'lose'
     },
-    'scissor' : {
-        'rock' : 'lose',
-        'scissor' : 'draw',
-        'paper' : 'win'
+    'tesoura' : {
+        'pedra' : 'lose',
+        'tesoura' : 'draw',
+        'papel' : 'win'
     },
-    'paper' : {
-        'rock' : 'win',
-        'scissor' : 'lose',
-        'paper' : 'draw'
+    'papel' : {
+        'pedra' : 'win',
+        'tesoura' : 'lose',
+        'papel' : 'draw'
     }
 
 }
 
 function checker(input){
-    var choices = ["rock", "paper", "scissor"];
+    var choices = ["pedra", "papel", "tesoura"];
     var num = Math.floor(Math.random()*3);
 
     document.getElementById("comp_choice").innerHTML = 
